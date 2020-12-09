@@ -7,7 +7,7 @@ export default App = () => {
 
   useEffect(() => {
     fetch(
-      'http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-09&sortBy=publishedAt&apiKey=bfb361de38ac411bb2c17daee018d878'
+      'http://newsapi.org/v2/top-headlines?country=lv&category=business&apiKey=bfb361de38ac411bb2c17daee018d878'
     )
       .then((response) => response.json())
       .then((json) => setData(json.movies))
